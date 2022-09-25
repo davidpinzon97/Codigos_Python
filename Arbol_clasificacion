@@ -1,0 +1,30 @@
+# Construcción de variables X y Y
+Y=base_arbol["GLOBAL_transformados"]
+X=base_arbol.drop(["GLOBAL_transformados"], axis=1) 
+X_train, X_test, y_train, y_test=train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=1234) 
+pd.DataFrame(y_train).groupby("GLOBAL_transformados").size()/sum(pd.DataFrame(y_train).groupby("GLOBAL_transformados").size())
+
+# Construcción del arbol
+arbol=tree.DecisionTreeClassifier(criterion="entropy", max_depth=12)
+arbol.fit(X_train, y_train)
+dot_data = tree.export_graphviz(arbol, out_file=None, 
+                                feature_names=X_train.columns,  
+                                filled=True)
+graphviz.Source(dot_data, format="png") 
+
+# Pronósitocoss
+arbol.predict(X_test.iloc[0].values.reshape(1, -1))# Predict for multiple observations
+arbol.predict(X_test[0:10])
+
+# Validacion cruzada para obtener la profundidad óptima
+parameters = {'max_depth':range(2,20)} 
+arbol= GridSearchCV(tree.DecisionTreeClassifier(), parameters,scoring="accuracy", n_jobs=4)
+arbol.fit(X=X_train, y=y_train)
+tree_model = arbol.best_estimator_ ## El mejor modelo
+print (arbol.best_score_, arbol.best_params_)
+
+arbol.predict(X_train)
+
+# Matriz de confusión
+y_pred=arbol.predict(X_test) ## Datos de prueba
+confusion_matrix(y_test, y_pred)
