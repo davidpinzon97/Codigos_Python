@@ -1,0 +1,16 @@
+Y=base_logit["GLOBAL_transformados"]
+X=base_logit.drop(["GLOBAL_transformados"], axis=1) ## Todo lo demás
+X_train, X_test, y_train, y_test=train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=1234) ## Garantizando la misma proporcion
+## En el train y en el test
+pd.DataFrame(y_train).groupby("GLOBAL_transformados").size()/sum(pd.DataFrame(y_train).groupby("GLOBAL_transformados").size())
+Y = Y.astype(float).astype(int)
+X = X.astype(float).astype(int)
+regressor = LogisticIT(alpha=1.0, verbose=0)
+regressor.fit(X, Y)
+## Score
+score = regressor.score(X_test, y_test)
+print(score)
+## Predicción de 20 datos
+regressor.predict(X_test)[0:20]
+## Matriz de confusión
+confusion_matrix(y_test, y_pred)
