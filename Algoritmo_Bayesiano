@@ -1,0 +1,14 @@
+Y=base_logit["GLOBAL_transformados"]
+X=base_logit.drop(["GLOBAL_transformados"], axis=1) ## Todo lo demás
+X_train, X_test, y_train, y_test=train_test_split(X, Y, test_size=0.2, stratify=Y, random_state=1234) ## Garantizando la misma proporcion
+## En el train y en el test
+pd.DataFrame(y_train).groupby("GLOBAL_transformados").size()/sum(pd.DataFrame(y_train).groupby("GLOBAL_transformados").size())
+Y = Y.astype(float).astype(int)
+X = X.astype(float).astype(int)
+NB=MultinomialNB(alpha=1) 
+NB.fit(X_train, y_train)
+y_pred_train=NB.predict(X_train) ### 
+y_pred_test=NB.predict(X_test) ##  
+print("En los datos de entrenamiento \n",classification_report(y_train, y_pred_train))
+print("En los datos de prueba \n",classification_report(y_test, y_pred_test))
+NB.predict(X_test.iloc[1:3,:])
