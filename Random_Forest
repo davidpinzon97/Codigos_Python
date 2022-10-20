@@ -14,15 +14,15 @@ from collections import OrderedDict
 RANDOM_STATE=20
 ensemble_RF= [
     ("RandomForestClassifier, max_features='sqrt'",
-        RandomForestClassifier(warm_start=True,max_depth=10,  oob_score=True,
+        RandomForestClassifier(warm_start=True,max_depth=20,  oob_score=True,
                                max_features="sqrt",
                                random_state=RANDOM_STATE, max_samples=10000)),
     ("RandomForestClassifier, max_features='log2'",
-        RandomForestClassifier(warm_start=True,max_depth=10, max_features='log2',
+        RandomForestClassifier(warm_start=True,max_depth=20, max_features='log2',
                                oob_score=True,
                                random_state=RANDOM_STATE, max_samples=10000)),
     ("RandomForestClassifier, max_features=None",
-        RandomForestClassifier(warm_start=True,max_depth=10,  max_features=None,
+        RandomForestClassifier(warm_start=True,max_depth=20,  max_features=None,
                                oob_score=True,
                                random_state=RANDOM_STATE, max_samples=10000))]
 
@@ -52,3 +52,42 @@ plt.xlabel("n_estimators")
 plt.ylabel("OOB error rate")
 plt.legend(loc="upper right")
 plt.show()
+
+# Gráfico de cinco (5) variables más importantes
+importancias = RF.feature_importances_
+std = np.std([tree.feature_importances_ for tree in RF.estimators_],
+             axis=0)
+indices = np.argsort(importancias)[::-1]
+
+# Print the feature ranking
+print("Ranking de Variables:")
+
+for f in range(X.shape[1]):
+    print("%d. feature %d (%f)" % ( f + 1, indices[f], importancias[indices[f]]))
+
+plt.figure()
+plt.title("Ranking de Variables")
+plt.bar(range(X.shape[1]), importancias[indices],color="r", yerr=std[indices], align="center")
+plt.xticks(range(X.shape[1]), indices)
+plt.xlim([-1, X.shape[1]])
+plt.show()
+
+importancias
+X_train
+
+importance = pd.DataFrame(importancias, columns=["importancia"], index=X_train.columns)
+importance_df=importance.sort_values(by="importancia",ascending=False)
+importance_df=importance_df.head(5)
+importance_df.columns
+df = importance_df.rename_axis('index').reset_index()
+df = df.rename(columns={'index':'variables'})
+df
+
+
+sns.set_theme(style="darkgrid")
+plt.figure()
+plt.title("Ranking de Variables")
+plt.ylabel("Importancia")
+plt.grid
+plt.xticks(rotation = 90) 
+plt.bar(df.variables, df.importancia,color="r", align="center")
