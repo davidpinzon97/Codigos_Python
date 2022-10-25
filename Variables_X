@@ -1,0 +1,140 @@
+Edad
+ESTU_GENERO_M
+ESTU_GENERO_Sin respuesta
+ESTU_TIENEETNIA_Si
+ESTU_TIENEETNIA_Sin respuesta
+FAMI_ESTRATOVIVIENDA_Estrato 2
+FAMI_ESTRATOVIVIENDA_Estrato 3
+FAMI_ESTRATOVIVIENDA_Estrato 4
+FAMI_ESTRATOVIVIENDA_Estrato 5
+FAMI_ESTRATOVIVIENDA_Estrato 6
+FAMI_ESTRATOVIVIENDA_Sin Estrato
+FAMI_ESTRATOVIVIENDA_Sin respuesta
+FAMI_PERSONASHOGAR_3 a 4
+FAMI_PERSONASHOGAR_5 a 6
+FAMI_PERSONASHOGAR_7 a 8
+FAMI_PERSONASHOGAR_9 o más
+FAMI_PERSONASHOGAR_Sin respuesta
+FAMI_CUARTOSHOGAR_Cuatro
+FAMI_CUARTOSHOGAR_Dos
+FAMI_CUARTOSHOGAR_Seis o mas
+FAMI_CUARTOSHOGAR_Sin respuesta
+FAMI_CUARTOSHOGAR_Tres
+FAMI_CUARTOSHOGAR_Uno
+FAMI_EDUCACIONPADRE_Educación profesional incompleta
+FAMI_EDUCACIONPADRE_Ninguno
+FAMI_EDUCACIONPADRE_No Aplica
+FAMI_EDUCACIONPADRE_No sabe
+FAMI_EDUCACIONPADRE_Postgrado
+FAMI_EDUCACIONPADRE_Primaria completa
+FAMI_EDUCACIONPADRE_Primaria incompleta
+FAMI_EDUCACIONPADRE_Secundaria (Bachillerato) completa
+FAMI_EDUCACIONPADRE_Secundaria (Bachillerato) incompleta
+FAMI_EDUCACIONPADRE_Sin respuesta
+FAMI_EDUCACIONPADRE_Técnica o tecnológica completa
+FAMI_EDUCACIONPADRE_Técnica o tecnológica incompleta
+FAMI_EDUCACIONMADRE_Educación profesional incompleta
+FAMI_EDUCACIONMADRE_Ninguno
+FAMI_EDUCACIONMADRE_No Aplica
+FAMI_EDUCACIONMADRE_No sabe
+FAMI_EDUCACIONMADRE_Postgrado
+FAMI_EDUCACIONMADRE_Primaria completa
+FAMI_EDUCACIONMADRE_Primaria incompleta
+FAMI_EDUCACIONMADRE_Secundaria (Bachillerato) completa
+FAMI_EDUCACIONMADRE_Secundaria (Bachillerato) incompleta
+FAMI_EDUCACIONMADRE_Sin respuesta
+FAMI_EDUCACIONMADRE_Técnica o tecnológica completa
+FAMI_EDUCACIONMADRE_Técnica o tecnológica incompleta
+FAMI_TRABAJOLABORPADRE_Es dueño de un negocio grande, tiene un cargo de nivel directivo o gerencial
+FAMI_TRABAJOLABORPADRE_Es dueño de un negocio pequeño (tiene pocos empleados o no tiene, por ejemplo tienda, papelería, etc
+FAMI_TRABAJOLABORPADRE_Es operario de máquinas o conduce vehículos (taxita, chofer)
+FAMI_TRABAJOLABORPADRE_Es vendedor o trabaja en atención al público
+FAMI_TRABAJOLABORPADRE_No sabe
+FAMI_TRABAJOLABORPADRE_Pensionado
+FAMI_TRABAJOLABORPADRE_Sin respuesta
+FAMI_TRABAJOLABORPADRE_Tiene un trabajo de tipo auxiliar administrativo (por ejemplo, secretario o asistente)
+FAMI_TRABAJOLABORPADRE_Trabaja como personal de limpieza, mantenimiento, seguridad o construcción
+FAMI_TRABAJOLABORPADRE_Trabaja como profesional (por ejemplo médico, abogado, ingeniero)
+FAMI_TRABAJOLABORPADRE_Trabaja en el hogar, no trabaja o estudia
+FAMI_TRABAJOLABORPADRE_Trabaja por cuenta propia (por ejemplo plomero, electricista)
+FAMI_TRABAJOLABORMADRE_Es dueño de un negocio grande, tiene un cargo de nivel directivo o gerencial
+FAMI_TRABAJOLABORMADRE_Es dueño de un negocio pequeño (tiene pocos empleados o no tiene, por ejemplo tienda, papelería, etc
+FAMI_TRABAJOLABORMADRE_Es operario de máquinas o conduce vehículos (taxita, chofer)
+FAMI_TRABAJOLABORMADRE_Es vendedor o trabaja en atención al público
+FAMI_TRABAJOLABORMADRE_No sabe
+FAMI_TRABAJOLABORMADRE_Pensionado
+FAMI_TRABAJOLABORMADRE_Sin respuesta
+FAMI_TRABAJOLABORMADRE_Tiene un trabajo de tipo auxiliar administrativo (por ejemplo, secretario o asistente)
+FAMI_TRABAJOLABORMADRE_Trabaja como personal de limpieza, mantenimiento, seguridad o construcción
+FAMI_TRABAJOLABORMADRE_Trabaja como profesional (por ejemplo médico, abogado, ingeniero)
+FAMI_TRABAJOLABORMADRE_Trabaja en el hogar, no trabaja o estudia
+FAMI_TRABAJOLABORMADRE_Trabaja por cuenta propia (por ejemplo plomero, electricista)
+FAMI_TIENEINTERNET_Si
+FAMI_TIENEINTERNET_Sin respuesta
+FAMI_TIENESERVICIOTV_Si
+FAMI_TIENESERVICIOTV_Sin respuesta
+FAMI_TIENECOMPUTADOR_Si
+FAMI_TIENECOMPUTADOR_Sin respuesta
+FAMI_TIENELAVADORA_Si
+FAMI_TIENELAVADORA_Sin respuesta
+FAMI_TIENEHORNOMICROOGAS_Si
+FAMI_TIENEHORNOMICROOGAS_Sin respuesta
+FAMI_TIENEAUTOMOVIL_Si
+FAMI_TIENEAUTOMOVIL_Sin respuesta
+FAMI_TIENEMOTOCICLETA_Si
+FAMI_TIENEMOTOCICLETA_Sin respuesta
+FAMI_TIENECONSOLAVIDEOJUEGOS_Si
+FAMI_TIENECONSOLAVIDEOJUEGOS_Sin respuesta
+FAMI_NUMLIBROS_11 A 25 LIBROS
+FAMI_NUMLIBROS_26 A 100 LIBROS
+FAMI_NUMLIBROS_MÁS DE 100 LIBROS
+FAMI_NUMLIBROS_Sin respuesta
+FAMI_COMELECHEDERIVADOS_3 a 5 veces por semana
+FAMI_COMELECHEDERIVADOS_Nunca o rara vez comemos eso
+FAMI_COMELECHEDERIVADOS_Sin respuesta
+FAMI_COMELECHEDERIVADOS_Todos o casi todos los días
+FAMI_COMECARNEPESCADOHUEVO_3 a 5 veces por semana
+FAMI_COMECARNEPESCADOHUEVO_Nunca o rara vez comemos eso
+FAMI_COMECARNEPESCADOHUEVO_Sin respuesta
+FAMI_COMECARNEPESCADOHUEVO_Todos o casi todos los días
+FAMI_COMECEREALFRUTOSLEGUMBRE_3 a 5 veces por semana
+FAMI_COMECEREALFRUTOSLEGUMBRE_Nunca o rara vez comemos eso
+FAMI_COMECEREALFRUTOSLEGUMBRE_Sin respuesta
+FAMI_COMECEREALFRUTOSLEGUMBRE_Todos o casi todos los días
+FAMI_SITUACIONECONOMICA_Mejor
+FAMI_SITUACIONECONOMICA_Peor
+FAMI_SITUACIONECONOMICA_Sin respuesta
+ESTU_DEDICACIONLECTURADIARIA_Entre 1 y 2 horas
+ESTU_DEDICACIONLECTURADIARIA_Entre 30 y 60 minutos
+ESTU_DEDICACIONLECTURADIARIA_Más de 2 horas
+ESTU_DEDICACIONLECTURADIARIA_No leo por entretenimiento
+ESTU_DEDICACIONLECTURADIARIA_Sin respuesta
+ESTU_DEDICACIONINTERNET_Entre 1 y 3 horas
+ESTU_DEDICACIONINTERNET_Entre 30 y 60 minutos
+ESTU_DEDICACIONINTERNET_Más de 3 horas
+ESTU_DEDICACIONINTERNET_No Navega Internet
+ESTU_DEDICACIONINTERNET_Sin respuesta
+ESTU_HORASSEMANATRABAJA_Entre 11 y 20 horas
+ESTU_HORASSEMANATRABAJA_Entre 21 y 30 horas
+ESTU_HORASSEMANATRABAJA_Menos de 10 horas
+ESTU_HORASSEMANATRABAJA_Más de 30 horas
+ESTU_HORASSEMANATRABAJA_Sin respuesta
+ESTU_TIPOREMUNERACION_Si, en efectivo
+ESTU_TIPOREMUNERACION_Si, en efectivo y especie
+ESTU_TIPOREMUNERACION_Si, en especie
+ESTU_TIPOREMUNERACION_Sin respuesta
+COLE_NATURALEZA_OFICIAL
+COLE_CARACTER_NO APLICA
+COLE_CARACTER_Sin respuesta
+COLE_CARACTER_TÉCNICO
+COLE_CARACTER_TÉCNICO/ACADÉMICO
+COLE_JORNADA_MAÑANA
+COLE_JORNADA_NOCHE
+COLE_JORNADA_SABATINA
+COLE_JORNADA_TARDE
+COLE_JORNADA_UNICA
+Region_Andina
+Region_Caribe
+Region_Insular
+Region_Orinoquia
+Region_Pacifica
