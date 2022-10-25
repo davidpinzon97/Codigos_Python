@@ -28,3 +28,14 @@ arbol.predict(X_train)
 # Matriz de confusión
 y_pred=arbol.predict(X_test) ## Datos de prueba
 confusion_matrix(y_test, y_pred)
+
+# Descargar árbol de decisión
+def dot_to_img(dot, file = 'report.png'):
+    import os
+
+    name, ext = os.path.splitext(file)
+
+    graph = graphviz.Source(dot)
+    graph.format = ext[1:]
+    graph.view(name, cleanup = True)
+dot_to_img(dot_data, file = 'report2.png')
